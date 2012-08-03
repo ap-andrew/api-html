@@ -68,7 +68,7 @@ POST
 
 <p>
   <b>Doc:</b>
-  Create a Map in Apigee database that you can use to store data name/values pairs for retrieval at runtime for use in policy enforcement, for example.
+  
 </p>
 
 
@@ -112,43 +112,13 @@ curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/maps -H &qu
 		</tr>
 		</thead>
 
-
-<tr>
-<div class="request_element" id="request_element_51">
-<td>name</td>
-<td>The name of the Map</td>
-<td></td>
-<td>Yes</td>
-<td><a href="/request_elements/51" class="btn btn-mini">Detail</a></td>
-</div></tr>
-
-
-
-
-<tr>
-<div class="request_element" id="request_element_52">
-<td>entry</td>
-<td>One or more name/value pairs that contain the value to be stored for later retrieval</td>
-<td></td>
-<td>Yes</td>
-<td><a href="/request_elements/52" class="btn btn-mini">Detail</a></td>
-</div></tr>
-
-
-
 </table>
 </div>
 
 <b>Response Payload:</b> 
 <div class="well">
 	<pre>
-  {
-  &quot;entry&quot; : [ {
-    &quot;name&quot; : &quot;dev&quot;,
-    &quot;value&quot; : &quot;user1&quot;
-  } ],
-  &quot;name&quot; : &quot;prodmap&quot;
-}
+  
 	</pre>
 </div>
 
@@ -168,7 +138,7 @@ curl -u myname:mypass https://api.enterprise.apigee.com/v1/o/{myorg}/maps -H &qu
 <b>Errors</b> 
 <div class="well">
 	<pre>
-  Creates a Map in Apigee's database, which can be populated with additional entries as needed.
+  
 	</pre>
 </div>
 
@@ -181,6 +151,7 @@ Basic Auth
 <b>Content Types:</b>
 --- 
 - &quot;&quot;
+- application/json
 
 </p>
 

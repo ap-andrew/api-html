@@ -112,20 +112,14 @@ curl -u myname:mypass https://api.enterprise.apigee.com/apis/{apiName}/revisions
 <b>Response Payload:</b> 
 <div class="well">
 	<pre>
-  {
-  &quot;configurationVersion&quot; : {
-    &quot;majorVersion&quot; : 4,
-    &quot;minorVersion&quot; : 0
-  },
-  &quot;contextInfo&quot; : &quot;Revision null of application -NA-, in organization -NA-&quot;,
-  &quot;name&quot; : &quot;myAPI&quot;,
-  &quot;policies&quot; : [ ],
-  &quot;proxyEndpoints&quot; : [ ],
-  &quot;resources&quot; : [ ],
-  &quot;targetEndpoints&quot; : [ ],
-  &quot;targetServers&quot; : [ ],
-  &quot;type&quot; : &quot;Application&quot;
-}
+  &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+&lt;APIProxy name=&quot;sampleAPI&quot; revision=”1”&gt;
+   &lt;ConfigurationVersion majorVersion=”4” minorVersion=”0” /&gt;
+    &lt;StepDefinitions/&gt;
+    &lt;ProxyEndpoints/&gt;
+    &lt;Resources/&gt;
+    &lt;TargetEndpoints/&gt;
+&lt;/APIProxy&gt;
 	</pre>
 </div>
 
@@ -158,7 +152,6 @@ Basic Auth
 <b>Content Types:</b>
 --- 
 - &quot;&quot;
-- application/json
 
 </p>
 
