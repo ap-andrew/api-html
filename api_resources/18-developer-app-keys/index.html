@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apigee Enterprise API Reference</title>
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="Ypsjzh/R/ruUIGc02PgqRyk/31ZL6NZQx2LrszgQ5Bk=" name="csrf-token" />
+    <link href="/assets/application-a2cf2fc60e7f628224d6179e9acb6bde.css" media="all" rel="stylesheet" type="text/css" />
+    <script src="/assets/application-3d91ebb39ac1bf40fce53b1fddef09ec.js" type="text/javascript"></script>
+	
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+    <link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+
+  </head>
+
+
+  <body>
+
+ <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+		<a class="brand" href="#">Apigee Enterprise API</a>
+
+        <div class="container">
+            <ul class="nav">
+	          <li><a href="/quick_starts">Quick Starts</a></li>
+              <li><a href="/api_resources">API Resources</a></li>
+              <li><a href="/api_methods">API Methods</a></li>
+              <li><a href="/parameters">Parameters</a></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+    <div class="container">
+      <div class="content">
+        <div class="row">
+           <div class="span12">
+			<div>
+</div>
+            
+<div class="page-header">
+  <h1>Developer App Keys</h1>
+</div>
+
+<table>
+	<tbody>
+		<tr>
+  <td class="lead">/developers/{developerName}/apps/{appName}/keys/{consumerkey}</td>
+
+ <tr>
+	
+  <td>The Consumer Key (or &quot;API Key&quot;) provisioned for an App</td></tr>
+  <td>Crenetial pairs consisting of consumer key and consumer secret  are provisioned by Apigee to apps for specific API products. APigee maintains the relationship between key and API product, enabling APi product to be added to and removed from consumer keys. A single key can be used to access multiple API products. Keys many be manually or automatically approved for API products--that setting is part of the API product configuration. A key must approved and and approved for an API product to be capable of accessing any of the URIs defined in the API product.</td></tr>
+  <td><div id="well"><pre> {
+  &quot;apiProducts&quot; : [ {
+    &quot;apiproduct&quot; : &quot;ApiProduct&quot;,
+    &quot;status&quot; : &quot;approved&quot;
+  }, {
+    &quot;apiproduct&quot; : &quot;ApiProduct_qa&quot;,
+    &quot;status&quot; : &quot;approved&quot;
+  } ],
+  &quot;attributes&quot; : [ {
+    &quot;name&quot; : &quot;region&quot;,
+    &quot;value&quot; : &quot;south&quot;
+  }, {
+    &quot;name&quot; : &quot;country&quot;,
+    &quot;value&quot; : &quot;norway&quot;
+  } ],
+  &quot;consumerKey&quot; : &quot;0F2S7iCWcQ4mDQVGXwS5tgPAGWnNxo0q&quot;,
+  &quot;consumerSecret&quot; : &quot;CciaOUKFPXVgBIGk&quot;,
+  &quot;status&quot; : &quot;approved&quot;
+}</pre></div></td></tr>
+
+</tr>
+</tbody>
+</table>
+
+
+<table>
+	<tbody>
+		
+		<div class="lead">
+		<hr />
+		Update Key with ApiProduct(s)
+	       <a href="/api_methods/89-update-key-with-apiproduct-s" class="btn btn-mini">Detail</a>
+		    <a href="/api_methods/89-update-key-with-apiproduct-s/edit" class="btn btn-mini">Edit</a>
+		    <!-- <a href="/api_methods/89-update-key-with-apiproduct-s" class="btn btn-mini" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Delete</a></div> -->
+
+		
+		
+		<div id="well"><pre>/developers/{developerName}/apps/{appName}/keys/{consumerKey}</pre></div>		
+		
+		<tr>
+  <tr>
+	
+	  <tr><td><strong>Verb:</strong></td>
+	  <td><span class="label label-success">POST</span></td></tr>
+	
+	
+ <td><strong>Description:</strong></td>
+  <td>Adds an API Product to a Developer App Key</td></tr>
+
+
+
+  <tr><td><strong>Auth:</strong></td><td>Basic Auth</td></tr>
+
+
+<table>
+	<tbody>
+		
+		<div class="lead">
+		<hr />
+		Get a specific Key of Developer App
+	       <a href="/api_methods/90-get-a-specific-key-of-developer-app" class="btn btn-mini">Detail</a>
+		    <a href="/api_methods/90-get-a-specific-key-of-developer-app/edit" class="btn btn-mini">Edit</a>
+		    <!-- <a href="/api_methods/90-get-a-specific-key-of-developer-app" class="btn btn-mini" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Delete</a></div> -->
+
+		
+		
+		<div id="well"><pre>/developers/{developerName}/apps/{appName}/keys/{consumerKey}</pre></div>		
+		
+		<tr>
+  <tr>
+	
+	  <tr><td><strong>Verb:</strong></td>
+	  <td><span class="label label-success">GET</span></td></tr>
+	
+	
+ <td><strong>Description:</strong></td>
+  <td></td></tr>
+
+
+
+  <tr><td><strong>Auth:</strong></td><td>Basic Auth</td></tr>
+
+
+<table>
+	<tbody>
+		
+		<div class="lead">
+		<hr />
+		Delete a Developer App Key
+	       <a href="/api_methods/91-delete-a-developer-app-key" class="btn btn-mini">Detail</a>
+		    <a href="/api_methods/91-delete-a-developer-app-key/edit" class="btn btn-mini">Edit</a>
+		    <!-- <a href="/api_methods/91-delete-a-developer-app-key" class="btn btn-mini" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Delete</a></div> -->
+
+		
+		
+		<div id="well"><pre>/developers/{developerName}/apps/{appName}/keys/{consumerKey}</pre></div>		
+		
+		<tr>
+  <tr>
+	
+	  <tr><td><strong>Verb:</strong></td>
+	  <td><span class="label label-success">DELETE</span></td></tr>
+	
+	
+ <td><strong>Description:</strong></td>
+  <td></td></tr>
+
+
+
+  <tr><td><strong>Auth:</strong></td><td>Basic Auth</td></tr>
+
+
+<table>
+	<tbody>
+		
+		<div class="lead">
+		<hr />
+		Revoke a Developer App Key
+	       <a href="/api_methods/92-revoke-a-developer-app-key" class="btn btn-mini">Detail</a>
+		    <a href="/api_methods/92-revoke-a-developer-app-key/edit" class="btn btn-mini">Edit</a>
+		    <!-- <a href="/api_methods/92-revoke-a-developer-app-key" class="btn btn-mini" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Delete</a></div> -->
+
+		
+		
+		<div id="well"><pre>/developers/{developerName}/apps/{appName}/keys/{consumerKey}</pre></div>		
+		
+		<tr>
+  <tr>
+	
+	  <tr><td><strong>Verb:</strong></td>
+	  <td><span class="label label-success">POST</span></td></tr>
+	
+	
+ <td><strong>Description:</strong></td>
+  <td></td></tr>
+
+
+
+  <tr><td><strong>Auth:</strong></td><td>Basic Auth</td></tr>
+
+
+<table>
+	<tbody>
+		
+		<div class="lead">
+		<hr />
+		Approve a Developer App Key
+	       <a href="/api_methods/93-approve-a-developer-app-key" class="btn btn-mini">Detail</a>
+		    <a href="/api_methods/93-approve-a-developer-app-key/edit" class="btn btn-mini">Edit</a>
+		    <!-- <a href="/api_methods/93-approve-a-developer-app-key" class="btn btn-mini" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Delete</a></div> -->
+
+		
+		
+		<div id="well"><pre>/developers/{developerName}/apps/{appName}/keys/{consumerKey}</pre></div>		
+		
+		<tr>
+  <tr>
+	
+	  <tr><td><strong>Verb:</strong></td>
+	  <td><span class="label label-success">POST</span></td></tr>
+	
+	
+ <td><strong>Description:</strong></td>
+  <td></td></tr>
+
+
+
+  <tr><td><strong>Auth:</strong></td><td>Basic Auth</td></tr>
+
+
+<table>
+	<tbody>
+		
+		<div class="lead">
+		<hr />
+		Revoke APIProduct of a specific Key of Developer App
+	       <a href="/api_methods/94-revoke-apiproduct-of-a-specific-key-of-developer-app" class="btn btn-mini">Detail</a>
+		    <a href="/api_methods/94-revoke-apiproduct-of-a-specific-key-of-developer-app/edit" class="btn btn-mini">Edit</a>
+		    <!-- <a href="/api_methods/94-revoke-apiproduct-of-a-specific-key-of-developer-app" class="btn btn-mini" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Delete</a></div> -->
+
+		
+		
+		<div id="well"><pre>/developers/{developerName}/apps/{appName}/keys/{consumerkey}/apiproducts/{apiproduct_name}?action=revoke</pre></div>		
+		
+		<tr>
+  <tr>
+	
+	  <tr><td><strong>Verb:</strong></td>
+	  <td><span class="label label-success">POST</span></td></tr>
+	
+	
+ <td><strong>Description:</strong></td>
+  <td>Revokes the association of an API Product with a Developer App's consumer key.</td></tr>
+
+
+
+  <tr><td><strong>Auth:</strong></td><td>Basic Auth</td></tr>
+
+
+<table>
+	<tbody>
+		
+		<div class="lead">
+		<hr />
+		Approve APIProduct for the Key of Developer App
+	       <a href="/api_methods/95-approve-apiproduct-for-the-key-of-developer-app" class="btn btn-mini">Detail</a>
+		    <a href="/api_methods/95-approve-apiproduct-for-the-key-of-developer-app/edit" class="btn btn-mini">Edit</a>
+		    <!-- <a href="/api_methods/95-approve-apiproduct-for-the-key-of-developer-app" class="btn btn-mini" data-confirm="Are you sure?" data-method="delete" rel="nofollow">Delete</a></div> -->
+
+		
+		
+		<div id="well"><pre>/developers/{developerName}/apps/{appName}/keys/{consumerkey}/apiproducts/{apiproductName}</pre></div>		
+		
+		<tr>
+  <tr>
+	
+	  <tr><td><strong>Verb:</strong></td>
+	  <td><span class="label label-success">POST</span></td></tr>
+	
+	
+ <td><strong>Description:</strong></td>
+  <td>Approves the association of a Developer App's consumer key with an APi Product</td></tr>
+
+
+
+  <tr><td><strong>Auth:</strong></td><td>Basic Auth</td></tr>
+
+</tbody>
+</table>
+
+
+Schema:
+
+<div id="well"><pre></pre></div>
+
+<div class="form-actions">
+  <a href="/api_resources" class="btn"><span class="translation_missing" title="translation missing: en.helpers.links.back">Back</span></a>
+  <a href="/api_resources/18-developer-app-keys/edit" class="btn"><span class="translation_missing" title="translation missing: en.helpers.links.edit">Edit</span></a>
+
+</div>
+
+            </div>
+        </div><!--/row-->
+      </div><!--/content-->
+
+       <footer>
+        <p>&copy; Apigee, Inc. 2012</p>
+      </footer> 
+
+    </div> <!-- /container -->
+
+    <!-- Placed at the end of the document so the pages load faster -->
+     <script src="/assets/application-3d91ebb39ac1bf40fce53b1fddef09ec.js" type="text/javascript"></script> 
+
+  </body>
+</html>
